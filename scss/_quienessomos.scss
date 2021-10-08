@@ -1,0 +1,205 @@
+@import "./variables";
+
+/* -------------------------------------------------- QUIENES SOMOS +1200 */
+
+
+@media only screen and (min-width: 1200px) {
+    .gridQuienesSomos {
+        margin-top: 30px;
+        display: grid;
+        width: 98%;
+        grid-template-columns: 50% 25% 25%;
+        grid-column-gap: 10px;
+        grid-template-rows: 100px 200px 200px 100px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "titular foto1QuienesSomos foto2QuienesSomos"
+            "textoQuienesSomos foto1QuienesSomos foto2QuienesSomos"
+            "textoQuienesSomos foto3QuienesSomos foto4QuienesSomos"
+            "corazonLatiendo foto3QuienesSomos foto4QuienesSomos"
+    }
+
+
+    .seccionSomos {
+        grid-area: titular;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .seccionSomos__titulo {
+        font-family: $titulo-secciones;
+        text-align: center;
+        font-size: 45px;
+        font-weight: $titulo-secciones-bold;
+    }
+
+    .texto {
+        margin-left: 10px;
+    }
+
+    .seccionSomos__texto {
+        grid-area: textoQuienesSomos;
+        padding: 25px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        font-size: 13px !important;
+    }
+
+    .seccionSomos__fotos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .seccionSomos__fotos--super:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    #foto1QuienesSomos {
+        grid-area: foto1QuienesSomos;
+    }
+
+    #foto2QuienesSomos {
+        grid-area: foto2QuienesSomos;
+    }
+
+    #foto3QuienesSomos {
+        grid-area: foto3QuienesSomos;
+    }
+
+    #foto4QuienesSomos {
+        grid-area: foto4QuienesSomos;
+    }
+
+    #corazonLatiendo {
+        grid-area: corazonLatiendo;
+        padding: 20px;
+        justify-self: center;
+    }
+
+    /* C8 = CORAZÓN */
+
+    .corazon {
+        position: absolute;
+        margin: auto;
+        background-color: $sec-color;
+        height: 40px;
+        width: 40px;
+        transform: rotate(-45deg);
+        animation-name: beat;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    .corazon:after {
+        background-color: $sec-color;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        left: 25px;
+    }
+
+    .corazon:before {
+        background-color: $sec-color;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -25px;
+        left: 0px;
+    }
+
+    @keyframes backdiv {
+        50% {
+            background: #ffe6f2;
+        }
+    }
+
+    @keyframes beat {
+        0% {
+            transform: scale(1) rotate(-45deg);
+        }
+
+        50% {
+            transform: scale(0.6) rotate(-45deg);
+        }
+    }
+}
+
+/* -------------------------------------------------- QUIENES SOMOS -1200 */
+
+@media only screen and (max-width: 1200px) {
+
+    .gridQuienesSomos {
+        padding-top: 10px;
+        display: grid;
+        width: 98%;
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-template-rows: 100px 540px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "titular"
+            "textoQuienesSomos"
+    }
+
+    .seccionSomos {
+        grid-area: titular;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .seccionSomos__titulo {
+        font-family: $titulo-secciones;
+        text-align: center;
+        font-size: 50px;
+        font-weight: $titulo-secciones-bold;
+    }
+
+    .seccionSomos__texto {
+        grid-area: textoQuienesSomos;
+    }
+
+    .texto {
+        height: 530px;
+        font-size: small;
+        background-color: $primary-color;
+        padding: 45px;
+        margin-left: 10px;
+        border-radius: 5px;
+        align-items: stretch;
+        justify-items: stretch;
+        overflow: scroll;
+    }
+
+    .seccionSomos__fotos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #foto1QuienesSomos {
+        display: none;    }
+
+    #foto3QuienesSomos {
+        display: none;    }
+
+    
+    #corazonLatiendo #foto2QuienesSomos #foto4QuienesSomos {
+        display: none;
+    }
+
+    #foto4QuienesSomos {
+        display: none;
+    }
+
+    #foto2QuienesSomos {
+        display: none;
+    }
+}

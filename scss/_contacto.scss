@@ -1,0 +1,102 @@
+@import "./variables";
+
+
+/* -------------------------------------------------- CONTACTO +1200 */
+
+@media only screen and (min-width: 1200px) {
+
+    .gridContacto {
+        padding-top: 2px;
+        display: grid;
+        width: 99%;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
+        grid-template-rows: 110px 400px 630px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "descripcionSecciones descripcionSecciones"
+            "carouselExampleSlidesOnly carouselExampleSlidesOnly"
+            "formularioContacto mapaContacto"
+    }
+
+    #descripcionSecciones {
+        grid-area: descripcionSecciones;
+    }
+
+    #carouselExampleSlidesOnly {
+        grid-area: carouselExampleSlidesOnly;
+    }
+
+    #formularioContacto {
+        margin-left: 10px;
+        grid-area: formularioContacto;
+        background-color: $primary-color;
+    }
+
+    #mapaContacto {
+        grid-area: mapaContacto;
+        justify-content: center;
+    }
+
+    .formConsulta {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .carousel-item {
+        text-align: center;
+        img {
+            margin: 0 auto;
+            max-height: 395px;
+        }
+    }
+
+}
+
+/* -------------------------------------------------- HOME -1200 */
+
+@media only screen and (max-width: 1200px) {
+
+    #descripcionSecciones {
+        display: none;
+    }
+
+    #formularioContacto {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: $primary-color;
+        zoom: 70%;
+    }
+
+    .formConsulta {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+/* -------------------------------------------------- HOME -940 */
+
+@media only screen and (max-width: 940px) {
+
+    #carouselExampleSlidesOnly {
+        display: none;
+    }
+
+    #descripcionSecciones {
+        display: none;
+    }
+
+    #formularioContacto {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: $primary-color;
+        zoom: 70%;
+    }
+
+    .formConsulta {
+        margin: 10px;
+        padding: 5px;
+    }
+}

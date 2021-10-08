@@ -1,0 +1,170 @@
+@import "./variables";
+
+/* -------------------------------------------------- SECCIONES DE INFO: SERVICIOS + DESTINOS + CLIENTES */
+
+@media only screen and (min-width: 1200px) {
+
+    #descripcionSecciones {
+        padding: 30px;
+        text-align: center;
+        font-family: $titulo-secciones;
+        font-size: 20px;
+        font-weight: $titulo-secciones-bold;
+    }
+
+    .seccion__titulo {
+        padding: 20px;
+        background-color: $primary-color;
+        font-family: $titulo-secciones;
+        font-weight: $titulo-secciones-bold;
+        border-radius: 5px;
+        font-size: 30px;
+    }
+
+    .seccion__contenido {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .seccion__info {
+        flex-basis: 100px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .seccion__foto {
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .seccion__foto--ampliar:hover {
+        transform: scale(1.6, 1.6);
+
+    }
+
+    .seccion__subtitulo {
+        padding: 20px;
+        font-family: $titulo-secciones;
+        text-align: center;
+        font-size: 30px;
+        font-weight: $titulo-secciones-bold;
+    }
+
+    /* -------------------------------------------------- TABLA PRÓXIMAS SALIDAS */
+
+    table {
+        border: slategrey 5px solid;
+    }
+
+    th {
+        background-color: olive;
+        border: 2px solid;
+    }
+
+    td {
+        border: slategrey 2px solid;
+    }
+
+    #proxSalidas__tabla {
+        width: 70%;
+    }
+
+    #proxSalidas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .secciónInfo {
+        flex-basis: 100px;
+        display: inline-block;
+    }
+
+    .proxSalidas__destino--urgente {
+        font-weight: bolder;
+        color: red;
+    }
+
+}
+
+/* -------------------------------------------------- HOME -1200 */
+
+@media only screen and (max-width: 1200px) {
+
+    .seccion__contenido {
+        margin-top: 15px;
+    }
+
+    .articulo_info {
+        padding: 10px;
+    }
+
+    .seccion__descripcion {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .seccion__info {
+        flex-basis: 100px;
+        text-align: center;
+    }
+
+    .seccion__foto {
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .seccion__subtitulo {
+        padding: 20px;
+        font-family: $titulo-secciones;
+        text-align: center;
+        font-size: 25px;
+        font-weight: $titulo-secciones-bold;
+    }
+        /* -------------------------------------------------- TABLA PRÓXIMAS SALIDAS */
+
+        table {
+            border: slategrey 5px solid;
+        }
+    
+        th {
+            background-color: olive;
+            border: 2px solid;
+        }
+    
+        td {
+            border: slategrey 2px solid;
+        }
+    
+        #proxSalidas__tabla {
+            width: 70%;
+        }
+    
+        #proxSalidas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+    
+        .secciónInfo {
+            flex-basis: 100px;
+            display: inline-block;
+        }
+    
+        .proxSalidas__destino--urgente {
+            font-weight: bolder;
+            color: red;
+        }
+
+        .proxSalidas__cel {
+            display: none;
+        }
+    
+    
+    }

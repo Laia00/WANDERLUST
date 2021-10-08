@@ -1,0 +1,117 @@
+@import "./variables";
+
+/* -------------------------------------------------- NAV + LOGO SUPERIOR +1200 */
+
+
+@media only screen and (min-width: 1200px) {
+.bordeSuperior {
+    background-color: $primary-color;
+    min-height: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+.imgLogoHeader {
+    height: 187px;
+    margin-top: 10px;
+    margin-left: 10%;
+    padding: 15px;
+    float: left;
+}
+
+header {
+    height: 195px;
+}
+
+nav {
+    height: 195px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.nav-item-active {
+    font-weight: bolder;
+}
+
+ul {
+    padding-right: 50px;
+    padding-top: 130px;
+}
+
+}
+
+/* -------------------------------------------------- NAV + LOGO SUPERIOR  -1200 */
+
+@media only screen and (max-width: 1200px) {
+    .bordeSuperior {
+        background-color: $primary-color;
+        min-height: 10px;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .imgLogoHeader {
+        height: 87px;
+        margin-top: 10px;
+        margin-left: 10%;
+        padding: 15px;
+        float: left;
+    }
+    
+    header {
+        height: 95px;
+    }
+    
+    nav {
+        height: 95px;
+        text-align: right;
+        font-size: 20px;
+    }
+    
+    .nav-item-active {
+        font-weight: bolder;
+    }
+    
+    ul {
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+}
+
+/* -------------------------------------------------- NAV + LOGO SUPERIOR  -940 */
+
+@media only screen and (max-width: 940px) {
+    .bordeSuperior {
+        background-color: $primary-color;
+        min-height: 10px;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .imgLogoHeader {
+        height: 110px;
+        margin-top: 50px;
+        margin-left: 10%;
+        padding: 15px;
+        float: left;
+    }
+    
+    header {
+        height: 185px;
+    }
+    
+    nav {
+        height: 185px;
+        text-align: right;
+        font-size: 15px;
+    }
+    
+    .nav-item-active {
+        font-weight: bolder;
+    }
+    
+    ul {
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+}

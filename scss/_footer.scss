@@ -1,0 +1,34 @@
+@import "./variables";
+
+/* -------------------------------------------------- FOOTER + LOGO INFERIOR */
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+}
+
+.footerBorder {
+    background-color: $primary-color;
+    height: 5px;
+}
+
+.footerImg {
+    margin: 15px;
+    height: 65px;
+}
+
+.footerBorder--ancho {
+    background-color: $primary-color;
+    height: 45px;
+    text-align: left;
+    padding: 10px;
+}
+
+.fab {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
